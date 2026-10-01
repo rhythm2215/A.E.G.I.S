@@ -1,0 +1,41 @@
+{
+  "mcpServers": {
+    "python-executor": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\work\\.gemini\\antigravity\\scratch\\ai-pipeline-project\\mcp-servers\\python_exec_mcp.py"
+      ],
+      "env": {}
+    },
+    "linter": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\work\\.gemini\\antigravity\\scratch\\ai-pipeline-project\\mcp-servers\\linter_mcp.py"
+      ],
+      "env": {}
+    },
+    "git-helper": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\work\\.gemini\\antigravity\\scratch\\ai-pipeline-project\\mcp-servers\\git_mcp.py"
+      ],
+      "env": {
+        "_NOTE": "Requires git to be installed and in PATH. Install from https://git-scm.com/download/win"
+      }
+    },
+    "pytest-runner": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\work\\.gemini\\antigravity\\scratch\\ai-pipeline-project\\mcp-servers\\pytest_mcp.py"
+      ],
+      "env": {}
+    },
+    "sqlite-cache": {
+      "command": "python",
+      "args": [
+        "C:\\Users\\work\\.gemini\\antigravity\\scratch\\ai-pipeline-project\\mcp-servers\\sqlite_cache_mcp.py"
+      ],
+      "env": {}
+    }
+  }
+}

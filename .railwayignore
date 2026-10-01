@@ -1,0 +1,13 @@
+node_modules/
+dist/
+backend/venv/
+backend/.venv/
+**/__pycache__/
+**/*.pyc
+.agents/
+.git/
+.gitignore
+.vscode/
+.idea/
+*.log
+*.bat

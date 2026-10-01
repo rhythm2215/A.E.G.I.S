@@ -1,0 +1,217 @@
+{
+  "SUS-927": {
+    "id": "SUS-927",
+    "fullName": "thief 1 ahdvjv",
+    "threatLevel": "CRITICAL",
+    "alias": "",
+    "age": 30,
+    "gender": "Unknown",
+    "nationality": "Indian",
+    "status": "active_surveillance",
+    "watchlisted": true,
+    "facialImages": [
+      {
+        "id": "fi-SUS-927",
+        "url": "/uploads/SUS-927.jpg",
+        "capturedAt": "2026-09-25T11:34:55.321246",
+        "droneId": "CAM-01",
+        "confidence": 95,
+        "verified": true
+      }
+    ],
+    "recognitionConfidence": 95,
+    "physicalDescription": {
+      "height": "175 cm",
+      "weight": "70 kg",
+      "clothing": "Standard Attire",
+      "distinguishingFeatures": "Live Enrolled Subject"
+    },
+    "tracking": {
+      "assignedDrones": [
+        "CAM-01"
+      ],
+      "firstDetection": "2026-09-25T11:34:55.321246",
+      "lastDetection": "2026-09-25T11:34:55.321246",
+      "currentCoordinates": {
+        "lat": 25.3184,
+        "lng": 82.9752
+      },
+      "currentSector": "Sector B7"
+    },
+    "intelligence": {
+      "criminalHistory": [
+        "Watchlist Match Registry"
+      ],
+      "openInvestigations": [
+        "INV-LIVE-001"
+      ],
+      "associatedIndividuals": [],
+      "notes": "Enrolled into Watchlist. Immediate alert on detection."
+    }
+  },
+  "SUS-127": {
+    "id": "SUS-127",
+    "fullName": "Arjun Mehta",
+    "threatLevel": "CRITICAL",
+    "alias": "The Ghost",
+    "age": 34,
+    "gender": "Male",
+    "nationality": "Indian",
+    "status": "active_surveillance",
+    "watchlisted": true,
+    "facialImages": [
+      {
+        "id": "fi-001",
+        "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face",
+        "capturedAt": "2026-08-31T03:18:41Z",
+        "droneId": "DRN-03",
+        "confidence": 96,
+        "verified": true
+      }
+    ],
+    "recognitionConfidence": 96,
+    "physicalDescription": {
+      "height": "178 cm",
+      "weight": "72 kg",
+      "clothing": "Dark grey jacket, black trousers",
+      "distinguishingFeatures": "Scar on left cheek, tattoo on right forearm"
+    },
+    "tracking": {
+      "assignedDrones": [
+        "DRN-03",
+        "DRN-07"
+      ],
+      "firstDetection": "2026-08-31T03:18:41Z",
+      "lastDetection": "2026-08-31T03:44:12Z",
+      "currentCoordinates": {
+        "lat": 25.3184,
+        "lng": 82.9752
+      },
+      "currentSector": "Sector B7"
+    },
+    "intelligence": {
+      "criminalHistory": [
+        "Arms trafficking",
+        "Organized crime",
+        "Money laundering"
+      ],
+      "openInvestigations": [
+        "INV-2024-089",
+        "INV-2025-014"
+      ],
+      "associatedIndividuals": [
+        "SUS-212",
+        "SUS-431"
+      ],
+      "notes": "Considered armed and extremely dangerous. Do not approach without backup."
+    }
+  },
+  "SUS-212": {
+    "id": "SUS-212",
+    "fullName": "Kavitha Rajan",
+    "threatLevel": "HIGH",
+    "alias": "K-Rajan",
+    "age": 29,
+    "gender": "Female",
+    "nationality": "Indian",
+    "status": "watchlist",
+    "watchlisted": true,
+    "facialImages": [
+      {
+        "id": "fi-002",
+        "url": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=200&h=200&fit=crop&crop=face",
+        "capturedAt": "2026-08-30T14:22:00Z",
+        "droneId": "DRN-07",
+        "confidence": 89,
+        "verified": true
+      }
+    ],
+    "recognitionConfidence": 89,
+    "physicalDescription": {
+      "height": "162 cm",
+      "weight": "58 kg",
+      "clothing": "Blue kurta, jeans",
+      "distinguishingFeatures": "Distinctive birthmark on neck"
+    },
+    "tracking": {
+      "assignedDrones": [
+        "DRN-07"
+      ],
+      "firstDetection": "2026-08-29T11:00:00Z",
+      "lastDetection": "2026-08-31T02:50:00Z",
+      "currentCoordinates": {
+        "lat": 25.321,
+        "lng": 82.9801
+      },
+      "currentSector": "Sector C2"
+    },
+    "intelligence": {
+      "criminalHistory": [
+        "Financial fraud",
+        "Identity theft"
+      ],
+      "openInvestigations": [
+        "INV-2025-031"
+      ],
+      "associatedIndividuals": [
+        "SUS-127"
+      ],
+      "notes": "Suspected financial handler for SUS-127 network."
+    }
+  },
+  "SUS-431": {
+    "id": "SUS-431",
+    "fullName": "Rakesh Verma",
+    "threatLevel": "CRITICAL",
+    "alias": "Bullet",
+    "age": 41,
+    "gender": "Male",
+    "nationality": "Indian",
+    "status": "at_large",
+    "watchlisted": true,
+    "facialImages": [
+      {
+        "id": "fi-003",
+        "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
+        "capturedAt": "2026-08-28T09:15:00Z",
+        "droneId": "DRN-03",
+        "confidence": 82,
+        "verified": false
+      }
+    ],
+    "recognitionConfidence": 82,
+    "physicalDescription": {
+      "height": "185 cm",
+      "weight": "95 kg",
+      "clothing": "Black tactical vest, combat boots",
+      "distinguishingFeatures": "Burns on right hand"
+    },
+    "tracking": {
+      "assignedDrones": [
+        "DRN-03"
+      ],
+      "firstDetection": "2026-08-28T09:15:00Z",
+      "lastDetection": "2026-08-30T19:00:00Z",
+      "currentCoordinates": {
+        "lat": 25.309,
+        "lng": 82.965
+      },
+      "currentSector": "Transit"
+    },
+    "intelligence": {
+      "criminalHistory": [
+        "Homicide",
+        "Extortion",
+        "Weapons trafficking"
+      ],
+      "openInvestigations": [
+        "INV-2024-042",
+        "INV-2025-008"
+      ],
+      "associatedIndividuals": [
+        "SUS-127"
+      ],
+      "notes": "Former military contractor, highly trained in evasion tactics."
+    }
+  }
+}

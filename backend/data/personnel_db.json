@@ -1,0 +1,119 @@
+{
+  "PER-101": {
+    "id": "PER-101",
+    "fullName": "Col. Vikram Rathore",
+    "rank": "Colonel / Sector Commander",
+    "threatLevel": "LOW",
+    "alias": "Sector Commander",
+    "age": 48,
+    "gender": "Male",
+    "nationality": "Indian",
+    "role": "officer",
+    "unit": "Alpha Garrison",
+    "department": "Border Reconnaissance Cmd",
+    "clearanceLevel": "LEVEL 4     COMMAND",
+    "status": "AUTHORIZED",
+    "watchlisted": false,
+    "facialImages": [
+      {
+        "id": "fi-per-101",
+        "url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&h=200&fit=crop&crop=face",
+        "capturedAt": "2026-08-30T16:00:00Z",
+        "droneId": "CAM-01",
+        "confidence": 98,
+        "verified": true
+      }
+    ],
+    "recognitionConfidence": 98,
+    "physicalDescription": {
+      "height": "180 cm",
+      "weight": "80 kg",
+      "clothing": "Sector Commander Uniform",
+      "distinguishingFeatures": "Authorized Officer"
+    },
+    "tracking": {
+      "currentSector": "Sector Command Center"
+    },
+    "intelligence": {
+      "notes": "Authorized Sector Commander. Free clearance."
+    }
+  },
+  "PER-102": {
+    "id": "PER-102",
+    "fullName": "Capt. Ananya Sharma",
+    "rank": "Captain / Tactical Lead",
+    "threatLevel": "LOW",
+    "alias": "Tactical Lead",
+    "age": 32,
+    "gender": "Female",
+    "nationality": "Indian",
+    "role": "officer",
+    "unit": "Bravo Tactical Unit",
+    "department": "Quick Reaction Team 2",
+    "clearanceLevel": "LEVEL 3     OPERATIONAL",
+    "status": "AUTHORIZED",
+    "watchlisted": false,
+    "facialImages": [
+      {
+        "id": "fi-per-102",
+        "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&crop=face",
+        "capturedAt": "2026-08-30T16:00:00Z",
+        "droneId": "CAM-02",
+        "confidence": 96,
+        "verified": true
+      }
+    ],
+    "recognitionConfidence": 96,
+    "physicalDescription": {
+      "height": "168 cm",
+      "weight": "60 kg",
+      "clothing": "Tactical Operations Gear",
+      "distinguishingFeatures": "Authorized Officer"
+    },
+    "tracking": {
+      "currentSector": "Sector B7"
+    },
+    "intelligence": {
+      "notes": "Authorized Tactical Lead. Free clearance."
+    }
+  },
+  "PER-103": {
+    "id": "PER-103",
+    "fullName": "Rhythm Gupta",
+    "rank": "Officer / Tactical Lead",
+    "threatLevel": "LOW",
+    "alias": "Lead Specialist",
+    "age": 28,
+    "gender": "Male",
+    "nationality": "Indian",
+    "role": "officer",
+    "unit": "Technical Surveillance Division",
+    "department": "Cyber & Tactical Intel",
+    "clearanceLevel": "LEVEL 4     COMMAND",
+    "status": "AUTHORIZED",
+    "watchlisted": false,
+    "facialImages": [
+      {
+        "id": "fi-per-103",
+        "url": "/uploads/PER-103.jpg",
+        "capturedAt": "2026-09-23T06:28:14Z",
+        "droneId": "CAM-01",
+        "confidence": 98,
+        "verified": true
+      }
+    ],
+    "recognitionConfidence": 98,
+    "physicalDescription": {
+      "height": "178 cm",
+      "weight": "72 kg",
+      "clothing": "Authorized Attire",
+      "distinguishingFeatures": "Authorized Officer"
+    },
+    "tracking": {
+      "currentSector": "Sector Command Center"
+    },
+    "intelligence": {
+      "notes": "Authorized Tactical Systems Officer. Free clearance."
+    }
+  }
+}

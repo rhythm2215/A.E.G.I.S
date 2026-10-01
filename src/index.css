@@ -1,0 +1,288 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ================================================================
+   AEGIS — Obsidian Aegis Design System
+   Global Styles & Tactical Glass Utilities
+   ================================================================ */
+
+@layer base {
+  :root {
+    --top-bar-height: 64px;
+    --sidebar-width: 320px;
+    --panel-gap: 12px;
+    --container-padding: 24px;
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    height: 100%;
+    overflow: hidden;
+    background-color: #0d1516;
+    color: #dce4e5;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  #root {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(132, 147, 150, 0.3);
+    border-radius: 2px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 218, 243, 0.4);
+  }
+
+  /* Selection */
+  ::selection {
+    background: rgba(0, 218, 243, 0.25);
+    color: #00daf3;
+  }
+}
+
+@layer components {
+  /* ── Tactical Glass Surfaces ─────────────────────────────────── */
+
+  .tactical-glass {
+    background-color: rgba(18, 20, 23, 0.85);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .tactical-glass-light {
+    background-color: rgba(25, 33, 34, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .tactical-glass-heavy {
+    background-color: rgba(12, 16, 17, 0.92);
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+  }
+
+  /* ── HUD Glow Effects ────────────────────────────────────────── */
+
+  .hud-border-top {
+    box-shadow: inset 0 1px 0 rgba(0, 218, 243, 0.3);
+  }
+
+  .hud-glow {
+    box-shadow: 0 0 30px rgba(0, 218, 243, 0.08), inset 0 1px 0 rgba(0, 218, 243, 0.15);
+  }
+
+  .ambient-glow-red {
+    box-shadow: 0 0 24px rgba(255, 86, 44, 0.18);
+  }
+
+  .ambient-glow-cyan {
+    box-shadow: 0 0 24px rgba(0, 218, 243, 0.18);
+  }
+
+  .ambient-glow-amber {
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.18);
+  }
+
+  /* ── Status Chips ────────────────────────────────────────────── */
+
+  .chip {
+    @apply inline-flex items-center gap-1 px-2 py-0.5 rounded-full font-mono text-micro font-bold tracking-widest uppercase;
+  }
+  .chip-active {
+    @apply chip bg-primary-container/15 text-primary-container border border-primary-container/30;
+  }
+  .chip-warning {
+    @apply chip bg-alert-amber/15 text-alert-amber border border-alert-amber/30;
+  }
+  .chip-danger {
+    @apply chip bg-secondary-container/15 text-secondary border border-secondary/30;
+  }
+  .chip-success {
+    @apply chip bg-health-emerald/15 text-health-emerald border border-health-emerald/30;
+  }
+  .chip-offline {
+    @apply chip bg-outline/15 text-outline border border-outline/30;
+  }
+  .chip-info {
+    @apply chip bg-primary/10 text-primary border border-primary/20;
+  }
+
+  /* ── Tactical Buttons ────────────────────────────────────────── */
+
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded font-mono text-micro font-bold tracking-widest uppercase
+           transition-all duration-150 cursor-pointer select-none outline-none
+           focus-visible:ring-2 focus-visible:ring-primary-fixed-dim/50
+           active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed;
+  }
+
+  .btn-primary {
+    @apply btn px-4 py-2 bg-primary-container text-on-primary
+           hover:bg-primary-fixed-dim hover:shadow-ambient-cyan;
+  }
+
+  .btn-ghost {
+    @apply btn px-4 py-2 bg-transparent border border-outline/30 text-on-surface-variant
+           hover:border-primary-fixed-dim/50 hover:text-primary-fixed-dim hover:bg-primary-fixed-dim/5;
+  }
+
+  .btn-danger {
+    @apply btn px-4 py-2 bg-secondary-container text-white
+           hover:bg-secondary hover:shadow-ambient-red;
+  }
+
+  .btn-icon {
+    @apply btn p-2 w-9 h-9 rounded-lg bg-surface-container-high/60 border border-outline-variant/30
+           text-on-surface-variant hover:text-primary-fixed-dim hover:border-primary-fixed-dim/30
+           hover:bg-primary-fixed-dim/5;
+  }
+
+  .btn-icon-sm {
+    @apply btn p-1.5 w-7 h-7 rounded bg-transparent border border-outline-variant/20
+           text-on-surface-variant hover:text-primary-fixed-dim hover:border-primary-fixed-dim/30
+           hover:bg-primary-fixed-dim/5;
+  }
+
+  /* ── Panel Primitives ────────────────────────────────────────── */
+
+  .panel {
+    @apply tactical-glass rounded-lg flex flex-col overflow-hidden hud-border-top;
+  }
+
+  .panel-header {
+    @apply flex items-center justify-between px-3 py-2.5 border-b border-white/5 shrink-0;
+  }
+
+  .panel-title {
+    @apply font-mono text-label-caps font-bold text-on-surface-variant uppercase tracking-widest;
+  }
+
+  /* ── Glass Inputs ────────────────────────────────────────────── */
+
+  .input-glass {
+    @apply w-full bg-surface-container-lowest/80 border border-outline-variant/50
+           rounded px-3 py-2 text-body-md text-on-surface
+           placeholder:text-outline
+           transition-all duration-150
+           focus:outline-none focus:border-primary-fixed-dim focus:shadow-[0_0_0_1px_rgba(0,218,243,0.3)]
+           font-inter;
+  }
+
+  /* ── Telemetry Readouts ──────────────────────────────────────── */
+
+  .telemetry-box {
+    @apply bg-surface-container-lowest/80 border border-outline-variant/30 rounded px-2 py-1
+           font-mono text-data-mono text-primary-fixed-dim;
+  }
+
+  /* ── Navigation Active State ─────────────────────────────────── */
+
+  .nav-link {
+    @apply font-mono text-label-caps text-on-surface-variant uppercase tracking-widest
+           px-3 py-1.5 rounded transition-all duration-150
+           hover:text-primary-fixed-dim hover:bg-primary-fixed-dim/5;
+  }
+
+  .nav-link-active {
+    @apply font-mono text-label-caps text-primary-fixed-dim uppercase tracking-widest
+           px-3 py-1.5 rounded border-b-2 border-primary-fixed-dim
+           bg-primary-fixed-dim/8;
+  }
+
+  /* ── Map overlay ─────────────────────────────────────────────── */
+
+  .map-overlay {
+    @apply absolute pointer-events-none inset-0;
+    background: radial-gradient(ellipse at center, transparent 40%, rgba(13, 21, 22, 0.5) 100%);
+  }
+
+  /* ── Scan line animation for live feeds ──────────────────────── */
+
+  .scan-lines::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.03) 2px,
+      rgba(0, 0, 0, 0.03) 4px
+    );
+    pointer-events: none;
+  }
+
+  /* ── Intelligence card separator ─────────────────────────────── */
+
+  .intel-row {
+    @apply flex items-start justify-between py-1.5 border-b border-white/5 last:border-0;
+  }
+
+  .intel-label {
+    @apply font-mono text-label-caps text-on-surface-variant uppercase tracking-wider shrink-0;
+  }
+
+  .intel-value {
+    @apply font-inter text-body-md text-on-surface text-right;
+  }
+
+  /* ── Priority indicators ─────────────────────────────────────── */
+
+  .priority-dot-critical { @apply w-2 h-2 rounded-full bg-error animate-pulse; }
+  .priority-dot-high     { @apply w-2 h-2 rounded-full bg-secondary-container; }
+  .priority-dot-medium   { @apply w-2 h-2 rounded-full bg-alert-amber; }
+  .priority-dot-low      { @apply w-2 h-2 rounded-full bg-health-emerald; }
+  .priority-dot-system   { @apply w-2 h-2 rounded-full bg-outline; }
+}
+
+@layer utilities {
+  .font-grotesk { font-family: 'Hanken Grotesk', system-ui, sans-serif; }
+  .font-inter   { font-family: 'Inter', system-ui, sans-serif; }
+  .font-mono    { font-family: 'JetBrains Mono', 'Fira Code', monospace; }
+
+  .text-glow-cyan  { text-shadow: 0 0 12px rgba(0, 218, 243, 0.6); }
+  .text-glow-red   { text-shadow: 0 0 12px rgba(255, 86, 44, 0.6); }
+  .text-glow-amber { text-shadow: 0 0 12px rgba(255, 193, 7, 0.6); }
+
+  .truncate-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Map container must have defined dimensions */
+  .mapbox-container {
+    @apply absolute inset-0 w-full h-full;
+  }
+}

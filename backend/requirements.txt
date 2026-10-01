@@ -1,0 +1,15 @@
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+pydantic>=2.8.0
+pydantic-settings>=2.4.0
+python-dotenv>=1.0.0
+numpy>=1.26.0
+opencv-python-headless>=4.10.0.84
+requests>=2.31.0
+pillow>=10.2.0
+websockets>=12.0
+python-multipart>=0.0.9
+# Note: A.E.G.I.S. uses OpenCV YuNet (FaceDetectorYN) and SFace (FaceRecognizerSF)
+# via native ONNX inference in opencv-python-headless.
+# dlib/face_recognition is optional and omitted for ultra-fast, lightweight Railway cloud builds.
+# face_recognition
